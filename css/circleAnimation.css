@@ -1,0 +1,46 @@
+
+    .innerCircle {
+    background-color: transparent;
+    border: 5px solid rgba(0, 0, 0, 0.6);
+    opacity: .9;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-radius: 100px;
+    top: -110px;
+    width: 122px;
+    height: 122px;
+    margin: 0 auto;
+    position: relative;
+    -moz-animation: spinoffPulse 1s infinite linear;
+    -webkit-animation: spinoffPulse 1s infinite linear;
+    
+    }
+    
+    
+    @-moz-keyframes spinPulse {
+        0% { -moz-transform:rotate(160deg); opacity:0; box-shadow:0 0 1px #bdd73c;}
+        50% { -moz-transform:rotate(145deg); opacity:1; }
+        100% { -moz-transform:rotate(-320deg); opacity:0; }
+    }
+    @-moz-keyframes spinoffPulse {
+        0% { -moz-transform:rotate(0deg); }
+        100% { -moz-transform:rotate(360deg);  }
+    }
+    @-webkit-keyframes spinPulse {
+        0% { -webkit-transform:rotate(160deg); opacity:0; box-shadow:0 0 1px #bdd73c; }
+        50% { -webkit-transform:rotate(145deg); opacity:1;}
+        100% { -webkit-transform:rotate(-320deg); opacity:0; }
+    }
+    @-webkit-keyframes spinoffPulse {
+        0% { -webkit-transform:rotate(0deg); }
+        100% { -webkit-transform:rotate(360deg); }
+    }
+    @-moz-keyframes rotatecircle {
+        0% { -moz-transform:rotate(0deg); }
+        100% { -moz-transform:rotate(-360deg); }
+    }
+    
+    @-webkit-keyframes rotatecircle {
+        0% { -webkit-transform:rotate(0deg); }
+    100% { -webkit-transform:rotate(-360deg); }
+    }

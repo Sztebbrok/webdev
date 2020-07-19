@@ -1,0 +1,42 @@
+.svg-wrapper {
+    height: 60px;
+      margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 260px;
+  }
+  
+  .shape {
+    fill: transparent;
+    stroke-dasharray: 100 540;
+    stroke-dashoffset: -404;
+    stroke-width: 5px;
+    stroke: #b60f03;
+  }
+  
+  .text {
+    color: #fff;
+    line-height: 32px;
+    position: relative;
+    top: -48px;
+    text-align: center;
+  }
+  
+  @keyframes draw {
+    0% {
+      stroke-dasharray: 140 540;
+      stroke-dashoffset: -474;
+      stroke-width: 5px;
+    }
+    100% {
+      stroke-dasharray: 760;
+      stroke-dashoffset: 0;
+      stroke-width: 5px;
+    }
+  }
+  
+  .svg-wrapper:hover .shape {
+    -webkit-animation: 1s draw linear forwards;
+    animation: 1s draw linear forwards;
+  }
